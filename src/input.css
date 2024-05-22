@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("./fonts/FontsFree-Net-ProductSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid";
+  src: url("./fonts/Euclid\ Circular\ B\ Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

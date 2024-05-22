@@ -1,0 +1,73 @@
+body {
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.controls {
+  margin-top: 400px;
+}
+
+.controls div {
+  padding: 12px 14px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.controls div {
+  opacity: 0.5; /* Adjusted opacity for better visibility */
+  cursor: default;
+}
+
+.disabled {
+  opacity: 0.5; /* Adjusted opacity for better visibility */
+  cursor: default;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0%;
+
+  width: 100%;
+
+  background-color: #f6f2ff;
+  border: 1px solid #b161b1;
+
+  opacity: 0;
+  transition: all 0.7s ease-out;
+  display: flex;
+  flex-direction: row;
+}
+
+.slide--active {
+  opacity: 1;
+  z-index: 9;
+}
+
+.prev,
+.next {
+  opacity: 0.3;
+}
+
+.prev {
+  transform: translateX(0) translateY(-20%) scale(0.8); /* Using translateX for horizontal movement */
+}
+
+.next {
+  transform: translateX(0) translateY(20%) scale(0.8); /* Using translateX for horizontal movement */
+}
