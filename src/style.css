@@ -71,3 +71,6 @@ body {
 .next {
   transform: translateX(0) translateY(20%) scale(0.8); /* Using translateX for horizontal movement */
 }
+.active-testimonial-button {
+  background-color: #89128a !important;
+}
